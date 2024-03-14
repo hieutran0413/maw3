@@ -1,29 +1,31 @@
 .root {
-  display: flex;
+  display: inline-flex;
   position: relative;
   flex-direction: row;
-  background: #232320;
+  background: rgba(12, 213, 111, 1);
   cursor: pointer;
   transition-property: background;
   transition-duration: 0.1s;
+  width: auto;
+  height: 36px;
   -webkit-transition-property: background;
   -webkit-transition-duration: 0.1s;
-  border-radius: 6px;
-  padding: 10px 20px;
+  border-radius: 100px;
+  padding: 7px 16px;
   border-width: 0px;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: calc(0px - 4px);
-  width: calc(100% + 4px);
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
 }
 .root > :global(.__wab_flex-container) > *,
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .root > :global(.__wab_flex-container) > picture > img,
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
-  margin-left: 4px;
+  margin-left: 10px;
 }
 .rootshowStartIcon {
   padding-left: 16px;
@@ -154,10 +156,11 @@
   outline: none;
 }
 .slotTargetChildren {
-  color: var(--token-ySgyskQdEv06);
+  color: var(--token-Hr1egt3PkNIr);
   font-weight: 400;
   font-size: 16px;
   white-space: pre;
+  font-family: var(--Noi Grotesk Trial);
 }
 .slotTargetChildrencolor_blue {
   color: #ffffff;

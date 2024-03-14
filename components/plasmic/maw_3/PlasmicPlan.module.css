@@ -78,6 +78,7 @@
 }
 .button__p2RI5:global(.__wab_instance) {
   position: relative;
+  flex-shrink: 0;
 }
 .svg__v5QOv {
   position: relative;

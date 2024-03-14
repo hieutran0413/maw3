@@ -72,6 +72,7 @@ import sty from "./PlasmicHeader.module.css"; // plasmic-import: dITpbX7WZfr4/cs
 import LogoIcon from "./icons/PlasmicIcon__Logo"; // plasmic-import: vhQc0NJNcqcr/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: mSWDjRsjR86D/icon
 import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: XbuSmLyuZiyx/icon
+import BrandIcon from "./icons/PlasmicIcon__Brand"; // plasmic-import: 3iaQts2kHx2n/icon
 
 createPlasmicElementProxy;
 
@@ -88,6 +89,12 @@ export type PlasmicHeader__OverridesType = {
   root?: Flex__<"div">;
   link?: Flex__<"a"> & Partial<LinkProps>;
   freeBox?: Flex__<"div">;
+  navBar?: Flex__<"div">;
+  navMenu?: Flex__<"div">;
+  navItems?: Flex__<"div">;
+  navButtoons?: Flex__<"div">;
+  component1?: Flex__<"div">;
+  signUp?: Flex__<"div">;
 };
 
 export interface DefaultHeaderProps {
@@ -205,14 +212,132 @@ function PlasmicHeader__RenderFunc(props: {
           {"Sign up"}
         </Button>
       </Stack__>
+      <Stack__
+        as={"div"}
+        data-plasmic-name={"navBar"}
+        data-plasmic-override={overrides.navBar}
+        hasGap={true}
+        className={classNames(projectcss.all, sty.navBar)}
+      >
+        <BrandIcon
+          className={classNames(projectcss.all, sty.svg__mvhD4)}
+          role={"img"}
+        />
+
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"navMenu"}
+          data-plasmic-override={overrides.navMenu}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.navMenu)}
+        >
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"navItems"}
+            data-plasmic-override={overrides.navItems}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.navItems)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__ux9YE
+              )}
+            >
+              {"Products"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__gh1SN
+              )}
+            >
+              {"Pricing"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__x6KQf
+              )}
+            >
+              {"Contact"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__o5Jo8
+              )}
+            >
+              {"Usecases"}
+            </div>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"navButtoons"}
+            data-plasmic-override={overrides.navButtoons}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.navButtoons)}
+          >
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"component1"}
+              data-plasmic-override={overrides.component1}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.component1)}
+            >
+              <div
+                data-plasmic-name={"signUp"}
+                data-plasmic-override={overrides.signUp}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.signUp
+                )}
+              >
+                {"Login"}
+              </div>
+            </Stack__>
+            <Button className={classNames("__wab_instance", sty.button__dnxr0)}>
+              {"Sign In"}
+            </Button>
+          </Stack__>
+        </Stack__>
+      </Stack__>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "freeBox"],
+  root: [
+    "root",
+    "link",
+    "freeBox",
+    "navBar",
+    "navMenu",
+    "navItems",
+    "navButtoons",
+    "component1",
+    "signUp"
+  ],
   link: ["link"],
-  freeBox: ["freeBox"]
+  freeBox: ["freeBox"],
+  navBar: [
+    "navBar",
+    "navMenu",
+    "navItems",
+    "navButtoons",
+    "component1",
+    "signUp"
+  ],
+  navMenu: ["navMenu", "navItems", "navButtoons", "component1", "signUp"],
+  navItems: ["navItems"],
+  navButtoons: ["navButtoons", "component1", "signUp"],
+  component1: ["component1", "signUp"],
+  signUp: ["signUp"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -221,6 +346,12 @@ type NodeDefaultElementType = {
   root: "div";
   link: "a";
   freeBox: "div";
+  navBar: "div";
+  navMenu: "div";
+  navItems: "div";
+  navButtoons: "div";
+  component1: "div";
+  signUp: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -285,6 +416,12 @@ export const PlasmicHeader = Object.assign(
     // Helper components rendering sub-elements
     link: makeNodeComponent("link"),
     freeBox: makeNodeComponent("freeBox"),
+    navBar: makeNodeComponent("navBar"),
+    navMenu: makeNodeComponent("navMenu"),
+    navItems: makeNodeComponent("navItems"),
+    navButtoons: makeNodeComponent("navButtoons"),
+    component1: makeNodeComponent("component1"),
+    signUp: makeNodeComponent("signUp"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,

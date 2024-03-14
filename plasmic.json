@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -34,7 +34,8 @@
       "globalContextsFilePath": "",
       "splitsProviderFilePath": "",
       "codeComponents": [],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "pAxFtMZvG1P122TfNRy6Mn",
@@ -380,6 +381,21 @@
           "id": "_4Y9fP4J6dWl",
           "name": "SearchsvgIcon",
           "moduleFilePath": "plasmic/maw_3/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "3iaQts2kHx2n",
+          "name": "BrandIcon",
+          "moduleFilePath": "plasmic/maw_3/icons/PlasmicIcon__Brand.tsx"
+        },
+        {
+          "id": "gkZ7viGMxq3u",
+          "name": "VectorIcon",
+          "moduleFilePath": "plasmic/maw_3/icons/PlasmicIcon__Vector.tsx"
+        },
+        {
+          "id": "nu3-cwVUaE3r",
+          "name": "Ellipse8Icon",
+          "moduleFilePath": "plasmic/maw_3/icons/PlasmicIcon__Ellipse8.tsx"
         }
       ],
       "images": [
