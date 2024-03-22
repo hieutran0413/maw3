@@ -59,17 +59,18 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import Header from "../../Header"; // plasmic-import: dITpbX7WZfr4/component
-import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
+import Tilt from "@plasmicpkgs/react-parallax-tilt";
+import HeroTitle from "../../HeroTitle"; // plasmic-import: 4RXjgAjZS5WW/component
+import AppDemo from "../../AppDemo"; // plasmic-import: t0Qn1QtC49T5/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: pAxFtMZvG1P122TfNRy6Mn/projectcss
 import sty from "./PlasmicHome.module.css"; // plasmic-import: xd4yJkfYQsZ6/css
-
-import VectorIcon from "./icons/PlasmicIcon__Vector"; // plasmic-import: gkZ7viGMxq3u/icon
-import Ellipse8Icon from "./icons/PlasmicIcon__Ellipse8"; // plasmic-import: nu3-cwVUaE3r/icon
 
 createPlasmicElementProxy;
 
@@ -84,27 +85,13 @@ export const PlasmicHome__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHome__OverridesType = {
   root?: Flex__<"div">;
+  gsap?: Flex__<typeof Embed>;
   header?: Flex__<typeof Header>;
   sectionHero?: Flex__<"div">;
-  reveal?: Flex__<typeof Reveal>;
-  heroTitle?: Flex__<"div">;
-  titles?: Flex__<"div">;
-  frame9?: Flex__<"div">;
-  frame4?: Flex__<"div">;
-  frame6?: Flex__<"div">;
-  frame12?: Flex__<"div">;
-  frame11?: Flex__<"div">;
-  frame1261152960?: Flex__<"div">;
-  frame1261152958?: Flex__<"div">;
-  freeBox?: Flex__<"div">;
-  rectangle2?: Flex__<"div">;
-  frame1261152959?: Flex__<"div">;
-  frame1261152961?: Flex__<"div">;
-  frame1261152962?: Flex__<"div">;
-  frame13?: Flex__<"div">;
-  frame1261152963?: Flex__<"div">;
-  frame1261152964?: Flex__<"div">;
-  frame1261152965?: Flex__<"div">;
+  tilt?: Flex__<typeof Tilt>;
+  img?: Flex__<typeof PlasmicImg__>;
+  heroTitle?: Flex__<typeof HeroTitle>;
+  appDemo?: Flex__<typeof AppDemo>;
 };
 
 export interface DefaultHomeProps {}
@@ -165,289 +152,69 @@ function PlasmicHome__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_library_plasmic_color_type_css.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
+          <Embed
+            data-plasmic-name={"gsap"}
+            data-plasmic-override={overrides.gsap}
+            className={classNames("__wab_instance", sty.gsap)}
+            code={
+              '<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>\n'
+            }
+          />
+
           <Header
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
           />
 
-          <div
+          <Stack__
+            as={"div"}
             data-plasmic-name={"sectionHero"}
             data-plasmic-override={overrides.sectionHero}
+            hasGap={true}
             className={classNames(projectcss.all, sty.sectionHero)}
           >
-            <Reveal
-              data-plasmic-name={"reveal"}
-              data-plasmic-override={overrides.reveal}
-              className={classNames("__wab_instance", sty.reveal)}
-              triggerOnce={true}
+            <Tilt
+              data-plasmic-name={"tilt"}
+              data-plasmic-override={overrides.tilt}
+              className={classNames("__wab_instance", sty.tilt)}
             >
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"heroTitle"}
-                data-plasmic-override={overrides.heroTitle}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.heroTitle)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"titles"}
-                  data-plasmic-override={overrides.titles}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.titles)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__llAMd
-                    )}
-                  >
-                    {"A new chapter in education excellent"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__hJqug
-                    )}
-                  >
-                    {
-                      "Where experts and educators share knowledge, combining simplicity with powerful content-creation tools."
-                    }
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"frame9"}
-                  data-plasmic-override={overrides.frame9}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame9)}
-                >
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame4"}
-                    data-plasmic-override={overrides.frame4}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame4)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ofY1
-                      )}
-                    >
-                      {"Get in Touch"}
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame6"}
-                    data-plasmic-override={overrides.frame6}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame6)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___4FdKb
-                      )}
-                    >
-                      {"Try it free"}
-                    </div>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-            </Reveal>
-            <VectorIcon
-              className={classNames(projectcss.all, sty.svg__vuV4, "orangeArc")}
-              role={"img"}
+              <PlasmicImg__
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"1652px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"1652px"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"eager"}
+                src={{
+                  src: "/plasmic/maw_3/images/blurImg1.svg",
+                  fullWidth: 2200,
+                  fullHeight: 2200,
+                  aspectRatio: 1
+                }}
+              />
+            </Tilt>
+            <HeroTitle
+              data-plasmic-name={"heroTitle"}
+              data-plasmic-override={overrides.heroTitle}
+              className={classNames("__wab_instance", sty.heroTitle)}
             />
 
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"frame12"}
-              data-plasmic-override={overrides.frame12}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame12)}
-            >
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"frame11"}
-                data-plasmic-override={overrides.frame11}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame11)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__saLdG
-                  )}
-                >
-                  {"Create"}
-                </div>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"frame1261152960"}
-                  data-plasmic-override={overrides.frame1261152960}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame1261152960)}
-                >
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame1261152958"}
-                    data-plasmic-override={overrides.frame1261152958}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame1261152958)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___1BrUs
-                      )}
-                    >
-                      {"Course"}
-                    </div>
-                    <div
-                      data-plasmic-name={"freeBox"}
-                      data-plasmic-override={overrides.freeBox}
-                      className={classNames(projectcss.all, sty.freeBox)}
-                    >
-                      <div
-                        data-plasmic-name={"rectangle2"}
-                        data-plasmic-override={overrides.rectangle2}
-                        className={classNames(projectcss.all, sty.rectangle2)}
-                      />
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame1261152959"}
-                    data-plasmic-override={overrides.frame1261152959}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame1261152959)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__vIdSi
-                      )}
-                    >
-                      {"Quiz"}
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame1261152961"}
-                    data-plasmic-override={overrides.frame1261152961}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame1261152961)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__qq4H
-                      )}
-                    >
-                      {"Lesson"}
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame1261152962"}
-                    data-plasmic-override={overrides.frame1261152962}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame1261152962)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__qFa
-                      )}
-                    >
-                      {"Assignment Task"}
-                    </div>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"frame13"}
-                data-plasmic-override={overrides.frame13}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame13)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"frame1261152963"}
-                  data-plasmic-override={overrides.frame1261152963}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame1261152963)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__oEm3W
-                    )}
-                  >
-                    {
-                      'A course on "Learning how to learn in the age of Al", for teens active on TikTok and social media.'
-                    }
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame1261152964"}
-                    data-plasmic-override={overrides.frame1261152964}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame1261152964)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__lQbA
-                      )}
-                    >
-                      {"Generate"}
-                    </div>
-                  </Stack__>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"frame1261152965"}
-                  data-plasmic-override={overrides.frame1261152965}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame1261152965)}
-                >
-                  <Ellipse8Icon
-                    className={classNames(projectcss.all, sty.svg__urIVq)}
-                    role={"img"}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__cs1Yy
-                    )}
-                  >
-                    {"AI machine is ready..."}
-                  </div>
-                </Stack__>
-              </Stack__>
-            </Stack__>
-          </div>
+            <AppDemo
+              data-plasmic-name={"appDemo"}
+              data-plasmic-override={overrides.appDemo}
+              className={classNames("__wab_instance", sty.appDemo)}
+            />
+          </Stack__>
         </Stack__>
       </div>
     </React.Fragment>
@@ -457,128 +224,34 @@ function PlasmicHome__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "gsap",
     "header",
     "sectionHero",
-    "reveal",
+    "tilt",
+    "img",
     "heroTitle",
-    "titles",
-    "frame9",
-    "frame4",
-    "frame6",
-    "frame12",
-    "frame11",
-    "frame1261152960",
-    "frame1261152958",
-    "freeBox",
-    "rectangle2",
-    "frame1261152959",
-    "frame1261152961",
-    "frame1261152962",
-    "frame13",
-    "frame1261152963",
-    "frame1261152964",
-    "frame1261152965"
+    "appDemo"
   ],
+  gsap: ["gsap"],
   header: ["header"],
-  sectionHero: [
-    "sectionHero",
-    "reveal",
-    "heroTitle",
-    "titles",
-    "frame9",
-    "frame4",
-    "frame6",
-    "frame12",
-    "frame11",
-    "frame1261152960",
-    "frame1261152958",
-    "freeBox",
-    "rectangle2",
-    "frame1261152959",
-    "frame1261152961",
-    "frame1261152962",
-    "frame13",
-    "frame1261152963",
-    "frame1261152964",
-    "frame1261152965"
-  ],
-  reveal: ["reveal", "heroTitle", "titles", "frame9", "frame4", "frame6"],
-  heroTitle: ["heroTitle", "titles", "frame9", "frame4", "frame6"],
-  titles: ["titles"],
-  frame9: ["frame9", "frame4", "frame6"],
-  frame4: ["frame4"],
-  frame6: ["frame6"],
-  frame12: [
-    "frame12",
-    "frame11",
-    "frame1261152960",
-    "frame1261152958",
-    "freeBox",
-    "rectangle2",
-    "frame1261152959",
-    "frame1261152961",
-    "frame1261152962",
-    "frame13",
-    "frame1261152963",
-    "frame1261152964",
-    "frame1261152965"
-  ],
-  frame11: [
-    "frame11",
-    "frame1261152960",
-    "frame1261152958",
-    "freeBox",
-    "rectangle2",
-    "frame1261152959",
-    "frame1261152961",
-    "frame1261152962"
-  ],
-  frame1261152960: [
-    "frame1261152960",
-    "frame1261152958",
-    "freeBox",
-    "rectangle2",
-    "frame1261152959",
-    "frame1261152961",
-    "frame1261152962"
-  ],
-  frame1261152958: ["frame1261152958", "freeBox", "rectangle2"],
-  freeBox: ["freeBox", "rectangle2"],
-  rectangle2: ["rectangle2"],
-  frame1261152959: ["frame1261152959"],
-  frame1261152961: ["frame1261152961"],
-  frame1261152962: ["frame1261152962"],
-  frame13: ["frame13", "frame1261152963", "frame1261152964", "frame1261152965"],
-  frame1261152963: ["frame1261152963", "frame1261152964"],
-  frame1261152964: ["frame1261152964"],
-  frame1261152965: ["frame1261152965"]
+  sectionHero: ["sectionHero", "tilt", "img", "heroTitle", "appDemo"],
+  tilt: ["tilt", "img"],
+  img: ["img"],
+  heroTitle: ["heroTitle"],
+  appDemo: ["appDemo"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  gsap: typeof Embed;
   header: typeof Header;
   sectionHero: "div";
-  reveal: typeof Reveal;
-  heroTitle: "div";
-  titles: "div";
-  frame9: "div";
-  frame4: "div";
-  frame6: "div";
-  frame12: "div";
-  frame11: "div";
-  frame1261152960: "div";
-  frame1261152958: "div";
-  freeBox: "div";
-  rectangle2: "div";
-  frame1261152959: "div";
-  frame1261152961: "div";
-  frame1261152962: "div";
-  frame13: "div";
-  frame1261152963: "div";
-  frame1261152964: "div";
-  frame1261152965: "div";
+  tilt: typeof Tilt;
+  img: typeof PlasmicImg__;
+  heroTitle: typeof HeroTitle;
+  appDemo: typeof AppDemo;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -641,27 +314,13 @@ export const PlasmicHome = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    gsap: makeNodeComponent("gsap"),
     header: makeNodeComponent("header"),
     sectionHero: makeNodeComponent("sectionHero"),
-    reveal: makeNodeComponent("reveal"),
+    tilt: makeNodeComponent("tilt"),
+    img: makeNodeComponent("img"),
     heroTitle: makeNodeComponent("heroTitle"),
-    titles: makeNodeComponent("titles"),
-    frame9: makeNodeComponent("frame9"),
-    frame4: makeNodeComponent("frame4"),
-    frame6: makeNodeComponent("frame6"),
-    frame12: makeNodeComponent("frame12"),
-    frame11: makeNodeComponent("frame11"),
-    frame1261152960: makeNodeComponent("frame1261152960"),
-    frame1261152958: makeNodeComponent("frame1261152958"),
-    freeBox: makeNodeComponent("freeBox"),
-    rectangle2: makeNodeComponent("rectangle2"),
-    frame1261152959: makeNodeComponent("frame1261152959"),
-    frame1261152961: makeNodeComponent("frame1261152961"),
-    frame1261152962: makeNodeComponent("frame1261152962"),
-    frame13: makeNodeComponent("frame13"),
-    frame1261152963: makeNodeComponent("frame1261152963"),
-    frame1261152964: makeNodeComponent("frame1261152964"),
-    frame1261152965: makeNodeComponent("frame1261152965"),
+    appDemo: makeNodeComponent("appDemo"),
 
     // Metadata about props expected for PlasmicHome
     internalVariantProps: PlasmicHome__VariantProps,

@@ -159,6 +159,17 @@
   > img {
   margin-left: 413px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .navBar {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .navBar > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
 .svg__mvhD4 {
   position: relative;
   object-fit: cover;
@@ -328,7 +339,7 @@
   position: relative;
   width: auto;
 }
-.svg__l6Hr5 {
+.svg__slp1 {
   position: relative;
   object-fit: cover;
   width: 24px;

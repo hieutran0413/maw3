@@ -64,6 +64,7 @@ import * as pp from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: pAxFtMZvG1P122TfNRy6Mn/projectcss
 import sty from "./PlasmicButton.module.css"; // plasmic-import: k9iE2OzwPgTL/css
 
@@ -77,7 +78,13 @@ export type PlasmicButton__VariantMembers = {
   isDisabled: "isDisabled";
   shape: "rounded";
   size: "compact";
-  color: "blue" | "red" | "outlineBlue" | "outlineRed" | "clear";
+  color:
+    | "blue"
+    | "red"
+    | "outlineBlue"
+    | "outlineRed"
+    | "clear"
+    | "unnamedVariant";
 };
 export type PlasmicButton__VariantsArgs = {
   showStartIcon?: SingleBooleanChoiceArg<"showStartIcon">;
@@ -86,7 +93,7 @@ export type PlasmicButton__VariantsArgs = {
   shape?: SingleChoiceArg<"rounded">;
   size?: SingleChoiceArg<"compact">;
   color?: SingleChoiceArg<
-    "blue" | "red" | "outlineBlue" | "outlineRed" | "clear"
+    "blue" | "red" | "outlineBlue" | "outlineRed" | "clear" | "unnamedVariant"
   >;
 };
 type VariantPropType = keyof PlasmicButton__VariantsArgs;
@@ -130,7 +137,7 @@ export interface DefaultButtonProps extends pp.BaseButtonProps {
   shape?: SingleChoiceArg<"rounded">;
   size?: SingleChoiceArg<"compact">;
   color?: SingleChoiceArg<
-    "blue" | "red" | "outlineBlue" | "outlineRed" | "clear"
+    "blue" | "red" | "outlineBlue" | "outlineRed" | "clear" | "unnamedVariant"
   >;
 }
 
@@ -237,6 +244,7 @@ function PlasmicButton__RenderFunc(props: {
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         plasmic_library_plasmic_color_type_css.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root,
         {
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
@@ -249,6 +257,11 @@ function PlasmicButton__RenderFunc(props: {
           ),
           [sty.rootcolor_outlineRed]: hasVariant($state, "color", "outlineRed"),
           [sty.rootcolor_red]: hasVariant($state, "color", "red"),
+          [sty.rootcolor_unnamedVariant]: hasVariant(
+            $state,
+            "color",
+            "unnamedVariant"
+          ),
           [sty.rootisDisabled]: hasVariant($state, "isDisabled", "isDisabled"),
           [sty.rootshape_rounded]: hasVariant($state, "shape", "rounded"),
           [sty.rootshape_rounded_showStartIcon]:

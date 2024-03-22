@@ -36,6 +36,11 @@
     min-height: 0;
   }
 }
+.gsap:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .header:global(.__wab_instance) {
   position: sticky;
   width: 100%;
@@ -46,632 +51,69 @@
 }
 .sectionHero {
   overflow: hidden;
-  display: block;
-  height: 914px;
+  display: flex;
+  height: 2000px;
   width: 100%;
   background: rgba(243, 245, 255, 1);
   position: relative;
   left: auto;
   top: auto;
   margin-top: calc(-136px + 0px) !important;
+  flex-direction: column;
   min-width: 0;
   flex-shrink: 0;
 }
-.reveal:global(.__wab_instance) {
+.sectionHero > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 60px);
+  height: calc(100% + 60px);
+}
+.sectionHero > :global(.__wab_flex-container) > *,
+.sectionHero > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.sectionHero > :global(.__wab_flex-container) > picture > img,
+.sectionHero
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 60px;
+}
+.tilt:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
-  position: relative;
-}
-.heroTitle {
-  width: auto;
-  height: auto;
-  display: flex;
   position: absolute;
-  top: 226px;
-  left: 540px;
-  flex-direction: column;
+  width: 100%;
+  left: 0px;
+  top: 389px;
+  min-width: 0;
 }
-.heroTitle > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: calc(0px - 24px);
-  height: calc(100% + 24px);
-}
-.heroTitle > :global(.__wab_flex-container) > *,
-.heroTitle > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.heroTitle > :global(.__wab_flex-container) > picture > img,
-.heroTitle
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 24px;
-}
-.titles {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-.titles > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: calc(0px - 12px);
-  height: calc(100% + 12px);
-}
-.titles > :global(.__wab_flex-container) > *,
-.titles > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.titles > :global(.__wab_flex-container) > picture > img,
-.titles
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 12px;
-}
-.text__llAMd {
-  display: block;
-  font-size: 64px;
-  text-align: center;
-  font-family: var(--Noi Grotesk Trial);
-  font-weight: 500;
-  letter-spacing: -2px;
-  line-height: 1;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-  width: 649px;
-}
-.text__hJqug {
-  display: block;
-  font-size: 16px;
-  text-align: center;
-  font-family: var(--Noi Grotesk Trial);
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 1.2;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-  width: 444px;
-}
-.frame9 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-}
-.frame9 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: calc(0px - 12px);
-  width: calc(100% + 12px);
-}
-.frame9 > :global(.__wab_flex-container) > *,
-.frame9 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame9 > :global(.__wab_flex-container) > picture > img,
-.frame9
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 12px;
-}
-.frame4 {
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.07);
-  width: auto;
-  height: 36px;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  border-radius: 100px;
-  padding: 7px 16px;
-}
-.frame4 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame4 > :global(.__wab_flex-container) > *,
-.frame4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame4 > :global(.__wab_flex-container) > picture > img,
-.frame4
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.text__ofY1 {
-  display: block;
-  font-size: 15px;
-  text-align: right;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-}
-.frame6 {
-  background: rgba(12, 213, 111, 1);
-  width: auto;
-  height: 36px;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  border-radius: 100px;
-  padding: 7px 16px;
-}
-.frame6 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame6 > :global(.__wab_flex-container) > *,
-.frame6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame6 > :global(.__wab_flex-container) > picture > img,
-.frame6
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.text___4FdKb {
-  display: block;
-  font-size: 15px;
-  text-align: right;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-}
-.svg__vuV4 {
-  object-fit: cover;
-  max-width: 100%;
-  color: #ff7a00;
-  transform: scale(1, -1);
-  width: 1078px;
-  height: 400px;
-  display: block;
-  transform-origin: top left;
-  left: 325px;
-  top: 121.66%;
-  position: absolute;
-}
-.frame12 {
-  background: rgba(8, 8, 8, 1);
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.039);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  width: 903px;
-  height: 393px;
-  display: flex;
-  position: absolute;
-  top: 521px;
-  left: 412px;
-  flex-direction: row;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-}
-.frame12 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame12 > :global(.__wab_flex-container) > *,
-.frame12 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame12 > :global(.__wab_flex-container) > picture > img,
-.frame12
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.frame11 {
-  background: rgba(247, 247, 247, 0);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  width: 266px;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: column;
-  flex-shrink: 0;
-  padding: 56px 16px 16px;
-}
-.frame11 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(0px - 10px);
-  height: calc(100% + 10px);
-}
-.frame11 > :global(.__wab_flex-container) > *,
-.frame11 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame11 > :global(.__wab_flex-container) > picture > img,
-.frame11
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 10px;
-}
-.text__saLdG {
-  display: block;
-  font-size: 34px;
-  text-align: center;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 100%;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-}
-.frame1261152960 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-}
-.frame1261152960 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(0px - 10px);
-  height: calc(100% + 10px);
-}
-.frame1261152960 > :global(.__wab_flex-container) > *,
-.frame1261152960 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame1261152960 > :global(.__wab_flex-container) > picture > img,
-.frame1261152960
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 10px;
-}
-.frame1261152958 {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0px 0px 0px 1px rgba(255, 122, 0, 1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  border-radius: 10px;
-  padding: 16px;
-}
-.frame1261152958 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame1261152958 > :global(.__wab_flex-container) > *,
-.frame1261152958 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame1261152958 > :global(.__wab_flex-container) > picture > img,
-.frame1261152958
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.text___1BrUs {
-  display: block;
-  font-size: 15px;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-}
-.freeBox {
-  display: block;
-  position: relative;
-  width: 2px;
-  height: 20px;
-  flex-shrink: 0;
-}
-.rectangle2 {
-  background: rgba(255, 122, 0, 1);
-  transform: scale(1, -1) rotate(-180deg);
-  width: 2px;
-  height: 20px;
-  display: block;
-  transform-origin: top left;
-  position: absolute;
-  left: 2px;
-  top: 0px;
-  border-radius: 33px;
-}
-.frame1261152959 {
-  background: rgba(255, 255, 255, 0.1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  border-radius: 10px;
-  padding: 16px;
-}
-.frame1261152959 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame1261152959 > :global(.__wab_flex-container) > *,
-.frame1261152959 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame1261152959 > :global(.__wab_flex-container) > picture > img,
-.frame1261152959
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.text__vIdSi {
-  display: block;
-  font-size: 15px;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-}
-.frame1261152961 {
-  background: rgba(255, 255, 255, 0.1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  border-radius: 10px;
-  padding: 16px;
-}
-.frame1261152961 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame1261152961 > :global(.__wab_flex-container) > *,
-.frame1261152961 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame1261152961 > :global(.__wab_flex-container) > picture > img,
-.frame1261152961
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.text__qq4H {
-  display: block;
-  font-size: 15px;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-}
-.frame1261152962 {
-  background: rgba(255, 255, 255, 0.1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  border-radius: 10px;
-  padding: 16px;
-}
-.frame1261152962 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame1261152962 > :global(.__wab_flex-container) > *,
-.frame1261152962 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame1261152962 > :global(.__wab_flex-container) > picture > img,
-.frame1261152962
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.text__qFa {
-  display: block;
-  font-size: 15px;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-}
-.frame13 {
-  background: rgba(247, 247, 247, 0.1);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
-  padding: 24px;
-}
-.frame13 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(0px - 16px);
-  height: calc(100% + 16px);
-}
-.frame13 > :global(.__wab_flex-container) > *,
-.frame13 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame13 > :global(.__wab_flex-container) > picture > img,
-.frame13
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 16px;
-}
-.frame1261152963 {
-  background: rgba(255, 255, 255, 1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  border-radius: 10px;
-  padding: 24px;
-}
-.frame1261152963 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame1261152963 > :global(.__wab_flex-container) > *,
-.frame1261152963 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame1261152963 > :global(.__wab_flex-container) > picture > img,
-.frame1261152963
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.text__oEm3W {
-  display: block;
-  font-size: 15px;
-  font-family: var(--Noi Grotesk Trial);
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 20px;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-  width: 389px;
-  flex-shrink: 0;
-}
-.frame1261152964 {
-  background: rgba(12, 213, 111, 1);
-  width: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  border-radius: 100px;
-  padding: 9px 16px;
-}
-.frame1261152964 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.frame1261152964 > :global(.__wab_flex-container) > *,
-.frame1261152964 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame1261152964 > :global(.__wab_flex-container) > picture > img,
-.frame1261152964
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 10px;
-}
-.text__lQbA {
-  display: block;
-  font-size: 15px;
-  text-align: right;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 500;
-  letter-spacing: 0em;
-  line-height: 20px;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-}
-.frame1261152965 {
-  background: rgba(0, 0, 0, 0.18);
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 24px;
-}
-.frame1261152965 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: calc(0px - 8px);
-  height: calc(100% + 8px);
-}
-.frame1261152965 > :global(.__wab_flex-container) > *,
-.frame1261152965 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame1261152965 > :global(.__wab_flex-container) > picture > img,
-.frame1261152965
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 8px;
-}
-.svg__urIVq {
+.img {
   position: relative;
   object-fit: cover;
-  max-width: 100%;
-  color: #ff7a00;
-  width: 28px;
-  height: 28px;
-  display: block;
-  flex-shrink: 0;
+  max-width: 1652px;
+  filter: none;
+  width: auto;
+  height: 1652px;
+  display: block !important;
+  left: auto;
+  top: auto;
+  z-index: -99;
 }
-.text__cs1Yy {
-  display: block;
-  font-size: 13px;
-  text-align: center;
-  font-family: "Noi Grotesk Trial";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 18px;
-  color: rgba(255, 255, 255, 1);
+.img > picture > img {
+  object-fit: cover;
+}
+.heroTitle:global(.__wab_instance) {
   position: relative;
+  top: auto;
+  left: auto;
+  margin-top: calc(211px + 60px) !important;
+}
+.appDemo:global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-shrink: 0;
 }

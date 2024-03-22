@@ -66,6 +66,7 @@ import { useScreenVariants as useScreenVariantsqNDsOoLtorJ } from "./PlasmicGlob
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: pAxFtMZvG1P122TfNRy6Mn/projectcss
 import sty from "./PlasmicHeader.module.css"; // plasmic-import: dITpbX7WZfr4/css
 
@@ -149,6 +150,7 @@ function PlasmicHeader__RenderFunc(props: {
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         plasmic_library_plasmic_color_type_css.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
     >

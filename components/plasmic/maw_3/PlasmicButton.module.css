@@ -53,8 +53,39 @@
   background: #e54d2e;
 }
 .rootcolor_outlineBlue {
-  background: #ffffff00;
-  border: 1px solid var(--token-p-fCTrfjtL4);
+  background: none;
+  width: auto;
+  height: 36px;
+  box-shadow: none;
+  cursor: pointer;
+  flex-direction: row;
+  display: inline-flex;
+  border-radius: 100px;
+  padding: 7px 16px;
+  border: 1px solid var(--token-OOswLOta7uV3);
+}
+.rootcolor_outlineBlue > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.rootcolor_outlineBlue > :global(.__wab_flex-container) > *,
+.rootcolor_outlineBlue
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.rootcolor_outlineBlue > :global(.__wab_flex-container) > picture > img,
+.rootcolor_outlineBlue
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+  margin-top: 0px;
 }
 .rootcolor_outlineRed {
   background: #fff0ee00;
@@ -62,6 +93,42 @@
 }
 .rootcolor_clear {
   background: #23232000;
+}
+.rootcolor_unnamedVariant {
+  width: auto;
+  height: 36px;
+  box-shadow: none;
+  flex-direction: row;
+  background: none;
+  backdrop-filter: blur(8px);
+  display: inline-flex;
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 100px;
+  padding: 7px 16px;
+  border: 1px solid var(--token-OOswLOta7uV3);
+}
+.rootcolor_unnamedVariant > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.rootcolor_unnamedVariant > :global(.__wab_flex-container) > *,
+.rootcolor_unnamedVariant
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.rootcolor_unnamedVariant > :global(.__wab_flex-container) > picture > img,
+.rootcolor_unnamedVariant
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+  margin-top: 0px;
 }
 .rootshape_rounded_showStartIcon {
   padding-left: 16px;
@@ -76,7 +143,36 @@
   padding-right: 8px;
 }
 .root:hover {
-  background: #282826;
+  background: rgba(12, 213, 111, 1);
+  width: auto;
+  height: 36px;
+  box-shadow: 0px 0px 0px 3px #0000001a;
+  cursor: pointer;
+  flex-direction: row;
+  display: inline-flex;
+  border-radius: 100px;
+  padding: 7px 16px;
+  border-width: 0px;
+}
+.root:hover > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.root:hover > :global(.__wab_flex-container) > *,
+.root:hover > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root:hover > :global(.__wab_flex-container) > picture > img,
+.root:hover
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+  margin-top: 0px;
 }
 .rootcolor_blue:hover {
   background: #369eff;
@@ -85,7 +181,7 @@
   background: #ec5e41;
 }
 .rootcolor_outlineBlue:hover {
-  background: #e1f0ff;
+  background: #00000012;
 }
 .rootcolor_outlineRed:hover {
   background: #ffe6e2;
@@ -94,15 +190,105 @@
   background: var(--token-ECewHnPLa);
 }
 .root:focus-within {
-  box-shadow: 0px 0px 0px 3px #96c7f2;
+  box-shadow: 0px 0px 0px 3px #0000001a;
+  width: auto;
+  height: 36px;
+  background: rgba(12, 213, 111, 1);
+  cursor: pointer;
+  flex-direction: row;
+  display: inline-flex;
   outline: none;
+  border-radius: 100px;
+  padding: 7px 16px;
+  border-width: 0px;
+}
+.root:focus-within > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.root:focus-within > :global(.__wab_flex-container) > *,
+.root:focus-within > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root:focus-within > :global(.__wab_flex-container) > picture > img,
+.root:focus-within
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+  margin-top: 0px;
 }
 .root___focusVisibleWithin {
-  box-shadow: 0px 0px 0px 3px #96c7f2;
+  box-shadow: 0px 0px 0px 3px #0000001a;
+  width: auto;
+  height: 36px;
+  background: rgba(12, 213, 111, 1);
+  cursor: pointer;
+  flex-direction: row;
+  display: inline-flex;
   outline: none;
+  border-radius: 100px;
+  padding: 7px 16px;
+  border-width: 0px;
+}
+.root___focusVisibleWithin > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.root___focusVisibleWithin > :global(.__wab_flex-container) > *,
+.root___focusVisibleWithin
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.root___focusVisibleWithin > :global(.__wab_flex-container) > picture > img,
+.root___focusVisibleWithin
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+  margin-top: 0px;
 }
 .root:active {
-  background: #2e2e2b;
+  background: #0db861;
+  width: auto;
+  height: 36px;
+  box-shadow: 0px 0px 0px 3px #0000001a;
+  cursor: pointer;
+  flex-direction: row;
+  display: inline-flex;
+  border-radius: 100px;
+  padding: 7px 16px;
+  border-width: 0px;
+}
+.root:active > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.root:active > :global(.__wab_flex-container) > *,
+.root:active > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root:active > :global(.__wab_flex-container) > picture > img,
+.root:active
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+  margin-top: 0px;
 }
 .rootcolor_blue:active {
   background: #52a9ff;
@@ -169,7 +355,7 @@
   color: #ffffff;
 }
 .slotTargetChildrencolor_outlineBlue {
-  color: #006adc;
+  color: var(--token-Hr1egt3PkNIr);
 }
 .slotTargetChildrencolor_outlineRed {
   color: #ca3214;
