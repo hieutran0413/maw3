@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Header from "../../Header"; // plasmic-import: dITpbX7WZfr4/component
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -85,6 +86,7 @@ export type PlasmicHome__OverridesType = {
   root?: Flex__<"div">;
   header?: Flex__<typeof Header>;
   sectionHero?: Flex__<"div">;
+  reveal?: Flex__<typeof Reveal>;
   heroTitle?: Flex__<"div">;
   titles?: Flex__<"div">;
   frame9?: Flex__<"div">;
@@ -177,86 +179,93 @@ function PlasmicHome__RenderFunc(props: {
             data-plasmic-override={overrides.sectionHero}
             className={classNames(projectcss.all, sty.sectionHero)}
           >
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"heroTitle"}
-              data-plasmic-override={overrides.heroTitle}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.heroTitle)}
+            <Reveal
+              data-plasmic-name={"reveal"}
+              data-plasmic-override={overrides.reveal}
+              className={classNames("__wab_instance", sty.reveal)}
+              triggerOnce={true}
             >
               <Stack__
                 as={"div"}
-                data-plasmic-name={"titles"}
-                data-plasmic-override={overrides.titles}
+                data-plasmic-name={"heroTitle"}
+                data-plasmic-override={overrides.heroTitle}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.titles)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__llAMd
-                  )}
-                >
-                  {"A new chapter in education excellent"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__hJqug
-                  )}
-                >
-                  {
-                    "Where experts and educators share knowledge, combining simplicity with powerful content-creation tools."
-                  }
-                </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"frame9"}
-                data-plasmic-override={overrides.frame9}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame9)}
+                className={classNames(projectcss.all, sty.heroTitle)}
               >
                 <Stack__
                   as={"div"}
-                  data-plasmic-name={"frame4"}
-                  data-plasmic-override={overrides.frame4}
+                  data-plasmic-name={"titles"}
+                  data-plasmic-override={overrides.titles}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.frame4)}
+                  className={classNames(projectcss.all, sty.titles)}
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__ofY1
+                      sty.text__llAMd
                     )}
                   >
-                    {"Get in Touch"}
+                    {"A new chapter in education excellent"}
                   </div>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"frame6"}
-                  data-plasmic-override={overrides.frame6}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame6)}
-                >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___4FdKb
+                      sty.text__hJqug
                     )}
                   >
-                    {"Try it free"}
+                    {
+                      "Where experts and educators share knowledge, combining simplicity with powerful content-creation tools."
+                    }
                   </div>
                 </Stack__>
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"frame9"}
+                  data-plasmic-override={overrides.frame9}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.frame9)}
+                >
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"frame4"}
+                    data-plasmic-override={overrides.frame4}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.frame4)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ofY1
+                      )}
+                    >
+                      {"Get in Touch"}
+                    </div>
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"frame6"}
+                    data-plasmic-override={overrides.frame6}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.frame6)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___4FdKb
+                      )}
+                    >
+                      {"Try it free"}
+                    </div>
+                  </Stack__>
+                </Stack__>
               </Stack__>
-            </Stack__>
+            </Reveal>
             <VectorIcon
-              className={classNames(projectcss.all, sty.svg__vuV4)}
+              className={classNames(projectcss.all, sty.svg__vuV4, "orangeArc")}
               role={"img"}
             />
 
@@ -450,6 +459,7 @@ const PlasmicDescendants = {
     "root",
     "header",
     "sectionHero",
+    "reveal",
     "heroTitle",
     "titles",
     "frame9",
@@ -472,6 +482,7 @@ const PlasmicDescendants = {
   header: ["header"],
   sectionHero: [
     "sectionHero",
+    "reveal",
     "heroTitle",
     "titles",
     "frame9",
@@ -491,6 +502,7 @@ const PlasmicDescendants = {
     "frame1261152964",
     "frame1261152965"
   ],
+  reveal: ["reveal", "heroTitle", "titles", "frame9", "frame4", "frame6"],
   heroTitle: ["heroTitle", "titles", "frame9", "frame4", "frame6"],
   titles: ["titles"],
   frame9: ["frame9", "frame4", "frame6"],
@@ -548,6 +560,7 @@ type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
   sectionHero: "div";
+  reveal: typeof Reveal;
   heroTitle: "div";
   titles: "div";
   frame9: "div";
@@ -630,6 +643,7 @@ export const PlasmicHome = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     sectionHero: makeNodeComponent("sectionHero"),
+    reveal: makeNodeComponent("reveal"),
     heroTitle: makeNodeComponent("heroTitle"),
     titles: makeNodeComponent("titles"),
     frame9: makeNodeComponent("frame9"),

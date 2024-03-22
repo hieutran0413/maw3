@@ -12,6 +12,8 @@
     "@plasmicapp/cli": "^0.1.327",
     "@plasmicapp/react-web": "^0.2.322",
     "@plasmicpkgs/plasmic-nav": "^0.0.161",
+    "@plasmicpkgs/react-awesome-reveal": "^3.8.192",
+    "@plasmicpkgs/react-parallax-tilt": "^0.0.191",
     "gsap": "^3.12.5",
     "next": "14.1.3",
     "react": "^18",

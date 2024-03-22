@@ -57,6 +57,11 @@
   min-width: 0;
   flex-shrink: 0;
 }
+.reveal:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .heroTitle {
   width: auto;
   height: auto;
@@ -232,7 +237,6 @@
   position: relative;
 }
 .svg__vuV4 {
-  position: absolute;
   object-fit: cover;
   max-width: 100%;
   color: #ff7a00;
@@ -241,8 +245,9 @@
   height: 400px;
   display: block;
   transform-origin: top left;
-  top: 121.66%;
   left: 325px;
+  top: 121.66%;
+  position: absolute;
 }
 .frame12 {
   background: rgba(8, 8, 8, 1);
