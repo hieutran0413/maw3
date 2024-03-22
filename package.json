@@ -11,6 +11,8 @@
   "dependencies": {
     "@plasmicapp/cli": "^0.1.327",
     "@plasmicapp/react-web": "^0.2.322",
+    "@plasmicpkgs/plasmic-nav": "^0.0.161",
+    "gsap": "^3.12.5",
     "next": "14.1.3",
     "react": "^18",
     "react-dom": "^18"
@@ -19,6 +21,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "copy-webpack-plugin": "^9.1.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.3",
     "typescript": "^5"
